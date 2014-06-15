@@ -5,11 +5,8 @@
 // Warning: the code is not polished!
 //
 // Author : Alessandro Gentilini
-// Source : http://code.google.com/p/pelagaletto/
-// License: GNU General Public License v3
+// Source : https://github.com/alessandro-gentilini/pelagaletto
 //
-// $Rev$
-// $Date$
 //
 
 #include <deque>
