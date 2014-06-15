@@ -21,6 +21,7 @@
 
 #include <ctime>
 #include <stdexcept>
+#include <random>
 
 typedef std::deque<int> CardDeck;
 typedef size_t GameID;
@@ -127,7 +128,7 @@ public:
 // -card deck of player B
 // -card deck on the table
 
-const size_t N_CARDS         = 20;
+const size_t N_CARDS         = 40;
 const size_t MAX_BATTLE_CARD = 3;
 const size_t BITS_PER_CODE   = 3;
 
@@ -447,6 +448,19 @@ bool test()
       passed = false;
    }   
 
+   // https://www.facebook.com/pages/Cavacamisa-Straccia-camicia-Pelagalletto-Infinita/208059069352285 
+   char facebook_22marzo_A[] = "XXXXX2X1XXXXXXX1XX3X";
+   char facebook_22marzo_B[] = "33XXXX2X1X2X31XXXX2X";
+   A = init(facebook_22marzo_A);
+   B = init(facebook_22marzo_B);
+   play_game(CardDeck(),A,B,table,starter,answerer,battle_starter,statuses,cnt,n_cards,
+      n_battles,false);
+   if ( n_cards != 3294 || n_battles != 535 ) {
+      // maybe I have an off-by-one error because
+      std::cerr << "Failed test: facebook_22marzo\n" << n_cards << " " << n_battles;
+      passed = false;
+   } 
+
    return passed;
 }
 
@@ -454,12 +468,12 @@ int main()
 {    
    if (!test()) return 1;
 
-   CardDeck deck = init("12300000001230000000");
+   CardDeck deck = init("XXXXX2X1XXXXXXX1XX3X33XXXX2X1X2X31XXXX2X");
    if ( deck.size() != N_CARDS ) {
       std::cerr << "error: deck size and status size mismatch\n";
       return 2;
    }
-   std::sort(deck.begin(),deck.end());
+   //std::sort(deck.begin(),deck.end());
    CardDeck A;
    CardDeck B;
 
@@ -480,6 +494,13 @@ int main()
    clock_t before;
    double elapsed;
    before = clock();
+
+   size_t max_n_cards = 0;
+
+    std::random_device rd;
+    std::mt19937 g(rd());
+ 
+
    
    do{
       A = CardDeck(deck.begin()              , deck.begin()+deck.size()/2);
@@ -490,17 +511,20 @@ int main()
          if ( !keep_info_between_games ) {
             statuses.clear();
          }
-         std::cout << cnt << "," << n_cards << "\n";
+         max_n_cards = std::max(max_n_cards,n_cards);
+         std::cout << to_string(deck) << "," << cnt << "," << max_n_cards << "," << n_cards << "\n";
          cnt++;
       }catch( const std::exception& e ) {
          std::cerr << "error: " << e.what() << "\n";
       }catch(...){
          std::cerr << "unknown error\n";
       }
-      if ( cnt % 10000 == 0 ) {
+      if ( cnt % 1000 == 0 ) {
          elapsed = clock() - before;
-         std::cerr << elapsed/CLOCKS_PER_SEC << "," << statuses.size() << "\n";
+         std::cerr << elapsed/CLOCKS_PER_SEC << "," << statuses.size() << "," << max_n_cards << "\n";
       }
+
+      std::shuffle(deck.begin(), deck.end(), g);
    }while( std::next_permutation( deck.begin(), deck.end() ) );
 
    return 0; 
