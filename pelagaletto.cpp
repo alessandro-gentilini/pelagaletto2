@@ -444,6 +444,8 @@ bool test()
    play_game(CardDeck(),A,B,table,starter,answerer,battle_starter,statuses,cnt,n_cards,
       n_battles,false);
    if ( n_cards != 7959 || n_battles != 1121 ) {
+      // maybe I have an off-by-one error because http://www.richardpmann.com/beggar-my-neighbour-records.html 
+      // says 7960 cards and 1122 tricks
       std::cerr << "Failed test: Rucklidge\n";
       passed = false;
    }   
