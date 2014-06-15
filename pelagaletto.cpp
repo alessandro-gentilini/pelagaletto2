@@ -436,6 +436,18 @@ bool test()
       passed = false;
    }
 
+   // http://www.richardpmann.com/beggar-my-neighbour-records.html
+   char Rucklidge_A[] = "-J------Q------AAA-----QQ-";
+   char Rucklidge_B[] = "K----JA-----------KQ-K-JJK";
+   A = init(Rucklidge_A);
+   B = init(Rucklidge_B);
+   play_game(CardDeck(),A,B,table,starter,answerer,battle_starter,statuses,cnt,n_cards,
+      n_battles,false);
+   if ( n_cards != 7959 || n_battles != 1121 ) {
+      std::cerr << "Failed test: Rucklidge\n";
+      passed = false;
+   }   
+
    return passed;
 }
 
