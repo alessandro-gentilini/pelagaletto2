@@ -18,29 +18,92 @@
 }
 
 \title{A bibliography for the problem of non-terminating game of Beggar-My-Neighbour}
-\author{Alessandro Gentilini}
+\author{Alessandro Gentilini\thanks{alessandro.gentilini@gmail.com}}
 
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-A bibliography for the problem of non-terminating game of Beggar-My-Neighbour
+A bibliography for the problem of non-terminating game of Beggar-My-Neighbour.
 \end{abstract} 
 
 \section{A bibliography for the problem of non-terminating game of Beggar-My-Neighbour}
 
-\cite{paulhus1999beggar}
+In \cite[p.164]{paulhus1999beggar}:
+\begin{quotation}
+If $C$ is a full deck of cvards, does ${D_{2}}^{'}(C)$ have a cycle? We leave this question unanswered except to say that we have been unable to find one in 3.2 billion randomly chosen deals.
+\end{quotation}
 
-\cite{albert2009games} is "Unsolved problems in Combinatorial Games" 465-489
+% http://library.msri.org/books/Book42/files/guy.pdf
+In \cite[p.472]{nowakowski2002more}:
+\begin{quotation}
+56. Are there any draws in \textbf{Beggar-my-Neighbor?}\\ 
 
-\cite{spivey2010cycles}
+[Two players deal single cards in turn onto a common stack. If a court card (J,
+Q, K, A) is dealt, the next player must cover it with respectively 1, 2, 3, 4 cards. If one of these is a court card, the obligation to cover reverts to the previous player. If they are not court cards, the previous player acquires the stack, which he inverts and places beneath his own hand, and starts dealing again. A player loses if she is unable to play.]\\
 
-\cite{DBLP:journals/corr/abs-1207-0016} 
-%is Е. Лакштанов
+This problem reappears periodically. It was one of Conway’s ‘anti-Hilbert problems’ about 40 years ago, but must have suggested itself to players of the game over the several centuries of its existence.\\
 
-\cite{russi}
+Marc Paulhus [1999] exhibited some cycles with small decks, and used a computer to show that there were no cycles when the game is played with a half-deck, although the addition or subtraction of two non-court cards produced cycles. Michael Kleber found an arrangement of two 26-card hands which required the dealing of 5790 cards before a winner was declared.
+\end{quotation}
 
+In \cite[p.892]{winning_ways_2004}:
+\begin{quotation}
+Strip-Jack-Naked, or Beggar-My-Neighbour **1\\
+
+Another problem that took almost 47 years to solve concerns this old children’s game. Each of
+the two players starts with about half of the cards (held face-down), which they alternately turn
+over onto a face-upwards “stack” on the table, until one of them (who's now “the commander”)
+first deals one of the “commanding cards” (Jack, Queen, King, or Ace).
+
+After one of these has been dealt, the other player (now “the responder”) turns over cards
+continuously until EITHER. **2 a new commanding card appears (when the players change
+roles **3) or respectively 1, 2, 3, or 4 non-commanding cards have been turned over. In the
+latter case, the commander turns over the stack and ajoins it to the bottom of his hand. The
+responder then starts the formation of a new stack by turning over his next card, and play
+continues as before.
+
+A player who acquires all the cards is the winner and in real games, it seems that someone
+always does win. The interesting mathematical question, posed by one of us many years ago,
+was “is it really true that the game always ends?” Marc Paulhus has recently found the answer
+to be “no!”. About 1 in 150,000 games (played with the usual 52 cards) goes on forever.
+
+We are fairly confident that no one person has played the game anything like that number
+of times, so the chance (with random shuffling) of experiencing a non-terminating game in a
+lifetime’s play must be very small indeed.
+
+Just as surely, however, the total number of times this game has been played by the
+World’s **4 children must be significantly larger than 150,000, so many of them will have
+been theoretically non-terminating ones. We imagine, though, that in practice most of them
+actually did terminate because someone made a mistake.
+\end{quotation}
+
+% http://library.msri.org/books/Book56/files/61guy.pdf
+In \cite[p.483]{albert2009games}:%"Unsolved problems in Combinatorial Games" 465-489
+\begin{quotation}
+\textbf{D7(56).} Are there any draws in Beggar-my-Neighbor? Marc Paulhus
+showed that there are no cycles when using a half-deck of two suits, but the problem for the whole deck (one of Conway’s “anti-Hilbert” problems) is still open.
+\end{quotation}
+
+% http://mathcs.pugetsound.edu/~mspivey/War.pdf
+In \cite{spivey2010cycles}:
+\begin{quotation}
+Berlekamp, Conway, and Guy also report in Vol. 4 of Winning Ways for Your Mathematical
+Plays [2, p. 892] that Marc Paulhus has shown that the similar game of Beggar-My-Neighbor
+can cycle, although the cycles are rare: About 1 in 150,000 games played with the usual 52-
+card deck cycle. (For more on Beggar-My-Neighbor, see Paulhus [5].)
+\end{quotation}
+
+In the abstract of \cite{russians_arxiv}:
+\begin{quotation}
+It is proved that in card games similar to 'Beggar-my-neighbour' the mathematical expectation of the playing time is finite, provided that the player who starts the round is determined randomly and the deck is shuffled when the trick is added. The result holds for the generic setting of the game.
+\end{quotation}
+
+In the abstract of \cite{russians_2013}:
+\begin{quotation}
+For card games of the Beggar-My-Neighbor type, we prove finiteness of the mathematical expectation of the game duration under the conditions that a player to play the first card is chosen randomly and that cards in a pile are shuffled before being placed to the deck. The result is also valid for general-type modifications of the game rules. In other words, we show that the graph of the Markov chain for the Beggar-My-Neighbor game is absorbing; i.e., from any vertex there is at least one path leading to the end of the game.
+\end{quotation}
 
 \bibliographystyle{plain}
 \bibliography{bibliography}
