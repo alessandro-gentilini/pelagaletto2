@@ -23,6 +23,7 @@
 #include <unordered_map>
 
 #include <ctime>
+#include <stdexcept>
 
 typedef std::deque<int> CardDeck;
 typedef size_t GameID;
@@ -170,7 +171,7 @@ BitStatus whois2( CardDeck* p )
    else if ( p == address_B )
       return BitStatus(static_cast<unsigned long long>(CODE_B));
    else
-      throw std::exception("address changed?");
+      throw std::runtime_error("address changed?");
 }
 
 // Convert the deck d to a biset representation
