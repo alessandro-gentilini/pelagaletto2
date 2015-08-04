@@ -17,6 +17,11 @@
     pdfborder={0 0 0},
 }
 
+\usepackage[backend=bibtex]{biblatex}
+\bibliography{bibliography.bib}
+
+
+
 \title{A bibliography for the problem of non-terminating game of Beggar-My-Neighbour}
 \author{Alessandro Gentilini\thanks{alessandro.gentilini@gmail.com}}
 
@@ -132,6 +137,5 @@ Markov chain for the Beggar-My-Neighbor game is absorbing; i.e., from any vertex
 there is at least one path leading to the end of the game.
 \end{quotation}
 
-\bibliographystyle{plain}
-\bibliography{bibliography}
+\printbibliography
 \end{document}
