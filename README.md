@@ -1,6 +1,29 @@
 # Is there a non-terminating game of Beggar-My-Neighbour?
 
-Pelagaletto is an Italian game similar to Beggar-My-Neighbour. At present date, March 2023, *Is there a non-terminating game of Beggar-My-Neighbour?* is still an open question while for the Italian game Pelagaletto the question was finally answered in May 2016:
+Pelagaletto is an Italian game similar to Beggar-My-Neighbour. At present date, March 2023, *Is there a non-terminating game of Beggar-My-Neighbour?* is still an open question (with the last record beeing Reed Nessler (09-06-2022). 1164 tricks, 8344 cards: `1: ---AJ--Q---------QAKQJJ-QK 2: -----A----KJ-K--------A---`) while for the Italian game Pelagaletto the question was finally answered by Riccardo Zanotto in February 2017:
+
+``` 
+00302020303100000310-00100200002000000010
+```
+
+see https://github.com/drago-96/cavacamisa and https://github.com/drago-96/cavacamisa/blob/master/infinite/20170217.txt.
+
+
+Furthermore, Diego Mazzaro wrote:
+
+> Some friends and I found this back in May 2016. At the time we were beaten by just some days by Michele Cocco Lasta who found the first cycle before us. He didn't whant to publish the configutation for "not taking away the pleasure of search to other people". He just published a one line note on a facebook page he had named "Cavacamisa Straccia camicia Pelagalletto Infinita".
+>
+> Recently I was noticed that on other sites someone found the configurations believing to be the first one. Maybe someone found it before 2016 too.
+>
+> Since then I moved to try tackling Beggar My Neighbour building a distributed computing network (with few PC actually) and looking for math reasonings that can help to reduce the search space.
+>
+> Answer
+>
+> The following are some of the existing starting sequences that generates non terminating games. All of these are related to three distinct cycles.
+>
+> Only Cycle 3 has balanced configurations in it (with 20/20 cards) while Cycle 1 and Cycle 2 can be reached from the given starting configurations but do not contain balanced configurations directly.
+>
+> The search was not exaustive so I cannot say if there are other cycles on Cavacamicia.
 
 ``` 
 Cycle 1 - 18 rounds, 93 tricks
@@ -42,7 +65,9 @@ Cycle 3 - 44 rounds, 273 tricks
 00303020203100000310 | 00100200002000000010
 00010020000200000001 | 00303020203100000310
 ```
+
 See *Diego Mazzaro (https://cstheory.stackexchange.com/users/68620/diego-mazzaro), Does this game terminate?, URL (version: 2023-03-06): https://cstheory.stackexchange.com/q/52560*.
+
 
 -----
 
