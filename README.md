@@ -78,7 +78,7 @@ e quindi non ha trovato il Pelagaletto Infinito in un miliardo di partite casual
 
 Nel 2009 il matematico [Richard K. Guy](http://math.ucalgary.ca/profiles/richard-guy) lo indica come problema non risolto in ["Unsolved problems in Combinatorial Games"](http://www.msri.org/communications/books/Book56/files/61guy.pdf) contenuto nel libro MSRI Publications – Volume 56 "Games of No Chance 3", Edited by Michael H. Albert and Richard J. Nowakowski - Cambridge University Press, Cambridge, 2009.
 
-Richard P. Mann ha detenuto fino al primo maggio 2012 il record della più lunga partita a Beggar My Neighbour: 7157 carte giocate per concludere la partita. Mann dà anche la configurazione iniziale che porta alla sua partita:
+[Richard P. Mann](http://www.richardpmann.com/beggar-my-neighbour-records.html) ha detenuto fino al primo maggio 2012 il record della più lunga partita a Beggar My Neighbour: 7157 carte giocate per concludere la partita. Mann dà anche la configurazione iniziale che porta alla sua partita:
 ```
 1: K-KK----K-A-----JAA--Q--J- 
 2: ---Q---Q-J-----J------AQ--
