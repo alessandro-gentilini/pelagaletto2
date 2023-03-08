@@ -1,17 +1,60 @@
-Pelagalletto infinito (Beggar-My-Neighbour)
-===========
+# Is there a non-terminating game of Beggar-My-Neighbour?
+
+Pelagaletto is an Italian game similar to Beggar-My-Neighbour. At present date, March 2023, *Is there a non-terminating game of Beggar-My-Neighbour?* is still an open question while for the Italian game Pelagaletto the question was finally answered in May 2016:
+
+``` 
+Cycle 1 - 18 rounds, 93 tricks
+00200000021000013000 | 00020001020310030300
+00002000102031003030 | 00200000021000013000
+00001000320020010001 | 32020000000010030003
+02001000121003000200 | 01003000303000020000
+00100300030300002000 | 02001000121003000200
+01000100300020001020 | 03303000020000002100
+00330300002000000210 | 01000100300020001020
+
+Cycle 2 - 10 rounds, 78 tricks
+00000030100202020310 | 00010000300002100300
+00001000030000210030 | 00000030100202020310
+10020202031000030030 | 00002100300000000010
+10000021003000000000 | 01002020203100003003
+13000021003000000000 | 00100202020310000300
+00001002020203100003 | 10300002100300000000
+01030000210030000000 | 00001002020203100003
+00003010020202031000 | 00100030000210030000
+00010003000021003000 | 00003010020202031000
+02020203100003003010 | 00210030000000001000
+00021003000000000100 | 02020203100003003010
+
+Cycle 3 - 44 rounds, 273 tricks
+00020000000100000310 | 02031000003100302020
+00203100000310030202 | 00020000000100000310
+00000010020302030310 | 00100300010020000200
+00010030001002000020 | 00000010020302030310
+00203020303100000310 | 00100200002000000010
+00020000000100000210 | 03031000003100302020
+00303100000310030202 | 00020000000100000210
+00000010030202030310 | 00100300010020000200 
+00010030001002000020 | 00000010030202030310 
+00302020303100000310 | 00100200002000000010
+00010020000200000001 | 00302020303100000310
+00000010030302020310 | 00100300010020000200
+00010030001002000020 | 00000010030302020310
+00303020203100000310 | 00100200002000000010
+00010020000200000001 | 00303020203100000310
+```
+See *Diego Mazzaro (https://cstheory.stackexchange.com/users/68620/diego-mazzaro), Does this game terminate?, URL (version: 2023-03-06): https://cstheory.stackexchange.com/q/52560*.
+
+-----
 
 Pelagaletto card game simulator. 
 
-Pelagaletto is an Italian game similar to Beggar-My-Neighbour.
-
-For a popular scientific introduction see [Pelagalletto infinito (Beggar-My-Neighbour)](https://sites.google.com/site/alessandrogentilini/pelagalletto-infinito-beggar-my-neighbour) (in Italian).
-
 The original code that was at https://code.google.com/p/pelagaletto/ now is at https://github.com/alessandro-gentilini/pelagaletto
 
-For a bibliography see [A bibliography for the problem of non-terminating game of Beggar-My-Neighbour](bibliography_for_non-terminating_game_of_Beggar-My-Neighbour.pdf?raw=true).
+For a bibliography see in this repository [A bibliography for the problem of non-terminating game of Beggar-My-Neighbour](bibliography_for_non-terminating_game_of_Beggar-My-Neighbour.pdf?raw=true).
 
-For C++ code see https://github.com/alessandro-gentilini/pelagaletto.
+I used to keep updated a popular scientific introduction (in Italian) at https://sites.google.com/site/alessandrogentilini/pelagalletto-infinito-beggar-my-neighbour but now that link is broken and so I put here that content.
+
+# Pelagalletto infinito (Beggar-My-Neighbour)
 
 Il Pelagalletto (anche Pelagaletto o in dialetto romagnolo Pelagalett) è un gioco di carte giocato in Romagna con un mazzo di 40 carte, tipiche le [Romagnole Dal Negro](https://shop.dalnegro.com/prodotto/romagnole-pro/).
 
