@@ -130,6 +130,48 @@ Il primo numero è l'indice della partita (la partita 0 è quella che inizia con
 
 Le figure seguenti mostrano la distribuzione delle durate di tutte le partite (escluse le 16 che non terminano), in particolare il picco corrisponde a quasi il 10% delle partite (323481) che si concludono dopo aver giocate 18 carte.
 
+![](istogramma-pelagalletto-con-mazzo-da-20-carte.png)
+
+![](semilog-istogramma-pelagalletto-con-mazzo-da-20-carte.png)
+
+![](log-log-istogramma-pelagalletto-con-mazzo-da-20-carte.png)
+
+La presenza di partite infinite nel caso di mezzo mazzo implica che ci saranno partite infinite con il mazzo completo?
+
+Non so rispondere alla domanda, la caccia è ancora aperta.
+
+## Note sull'algoritmo usato
+
+Ho scritto un programma in C++ per simulare le partite.
+
+Le partite sono enumerate con `std::next_permutation`.
+
+Ci sono due parti fondamentali dell'algoritmo, la prima è il simulatore di partita, la seconda è il riconoscimento di una partita infinita. 
+
+Ho provato modi differenti di tenere lo stato: nel primo modo lo stato è una `std::string` e tutti gli stati di una partita sono tenuti in una (ordered) `std::map`, tenere lo stato come string è semplice ma consuma più memoria del necessario, tenere gli stati in una map è semplice ma consuma più tempo del necessario perché non è importante che gli stati siano tenuti in ordine alfabetico.
+
+Nel secondo modo lo stato è un `std::bitset` e tutti gli stati di una partita sono tenuti ancora in una map. Tenere lo stato come bitset permette di ridurre al minimo la sua occupazione di memoria, per usare la map è però necessario scrivere l'operatore di ordinamento per il bitset; la map consuma comunque ancora più tempo del necessario perché non è importante tenere gli stati in ordine.
+
+Nel terzo modo lo stato è un bitset e tutti gli stati di una partita sono tenuti in una `std::unordered_map`, per usare l'unordered_map si deve scrivere<sup>1</sup> la funzione di hash per il bitset ma a questo punto si ha il minimo impiego di memoria ed il minimo impiego di tempo.
+
+Il codice non è ottimizzato (se non per le ottimizzazioni standard fatte dal compilatore nella configurazione "Release"), è single-threaded, e per giocare le quasi 3 milioni e mezzo di partite (3488400) possibili con il mezzo mazzo ci sono voluti circa 10 minuti su un vecchio Intel Pentium 4 a 3GHz con 1GB di RAM e Windows XP SP3.
+
+<sup>1</sup><sub>preciso: io ho dovuto scriverla perché usando Microsoft Visual C++ 2010 Express l'impiego della funzione di hash della libreria standard dava un warning, il warning non è più presente nella RC di Visual Studio 2012.</sub>
+
+<sub>
+© Alessandro Gentilini 2010 03 ottobre 2010.
+
+Qualche aggiunta il 02 febbraio 2012.
+
+Aggiornamento il 14 aprile 2012.
+
+Aggiornamento 9 giugno 2012.
+
+Il 21 luglio 2012 aggiunte informazioni sulle partite infinite presenti nel mezzo mazzo.
+
+Il 15 giugno 2014 aggiunte informazioni sul record attualmente detenuto dal googler William Rucklidge; aggiunto link a github per il codice C++ e per una bibliografia in pdf.
+</sub>
+
 
 
 
