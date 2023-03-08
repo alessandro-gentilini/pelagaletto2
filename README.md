@@ -9,7 +9,7 @@ For a popular scientific introduction see [Pelagalletto infinito (Beggar-My-Neig
 
 The original code that was at https://code.google.com/p/pelagaletto/ now is at https://github.com/alessandro-gentilini/pelagaletto
 
-For a bibliography see A bibliography for the problem of non-terminating game of Beggar-My-Neighbour.
+For a bibliography see [A bibliography for the problem of non-terminating game of Beggar-My-Neighbour](bibliography_for_non-terminating_game_of_Beggar-My-Neighbour.pdf?raw=true).
 
 For C++ code see https://github.com/alessandro-gentilini/pelagaletto.
 
