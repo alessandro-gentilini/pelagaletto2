@@ -127,7 +127,7 @@ Michael Z. Spivey nell'articolo "Cycles in war" riporta che:
 
 e quindi esisterebbero molte partite infinite di Beggar My Neighbour, purtroppo però Spivey non riporta nessuna configurazione che porti alla partita infinita ma d'altra parte l'ambito del suo articolo è un altro e la citazione che fa è solo nell'introduzione. Non sono riuscito a consultare il volume 4 di "Winning ways for your mathematical plays" e quindi non so se riporti le configurazioni che originano le partite infinite.
 
-Il problema viene quindi definito come risolto ma finché non è resa pubblica una dimostrazione o almeno una configurazione iniziale che dà la partita infinita si tratta solo di una opinione e non di un fatto.
+Il problema viene quindi definito come risolto ma finché non è resa pubblica una dimostrazione o almeno una configurazione iniziale che dà la partita infinita si tratta solo di una congettura e non di un fatto.
 
 Nel 2011 A. Aleksenko (Алена Алексенко) e E. Lakshtanov (Е.Лакштанов) pre-pubblicano l'articolo "Finiteness of the playing time in 'Beggar-my-neighbour' card game" - Конечность продолжительности карточной игры «Разори моего соседа» dove sostengono che:
 
