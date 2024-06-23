@@ -1,5 +1,13 @@
 # Is there a non-terminating game of Beggar-My-Neighbour?
 
+**YES, since March 19, 2024!** See https://doi.org/10.48550/arXiv.2403.13855 *A Non-Terminating Game of Beggar-My-Neighbor* by 
+Brayden Casella, Philip M. Anderson, Michael Kleber, Richard P. Mann, Reed Nessler, William Rucklidge, Samuel G. Williams, Nicolas Wu.
+The non-terminating game is:
+```
+1: ---K---Q-KQAJ-----AAJ--J-- 
+2: ----------Q----KQ-J-----KA
+```
+## Pre 2024
 Pelagaletto is an Italian game similar to Beggar-My-Neighbour. At present date, March 2023, *Is there a non-terminating game of Beggar-My-Neighbour?* is still an open question (with the last record beeing Reed Nessler (09-06-2022). 1164 tricks, 8344 cards: `1: ---AJ--Q---------QAKQJJ-QK 2: -----A----KJ-K--------A---`) while for the Italian game Pelagaletto the question was finally answered by Riccardo Zanotto in February 2017:
 
 ``` 
@@ -68,6 +76,8 @@ Cycle 3 - 44 rounds, 273 tricks
 
 See *Diego Mazzaro (https://cstheory.stackexchange.com/users/68620/diego-mazzaro), Does this game terminate?, URL (version: 2023-03-06): https://cstheory.stackexchange.com/q/52560*.
 
+See also https://zxq.co/howl/chevainpataia by morgan.
+
 
 -----
 
@@ -103,7 +113,7 @@ e quindi non ha trovato il Pelagaletto Infinito in un miliardo di partite casual
 
 Nel 2009 il matematico [Richard K. Guy](http://math.ucalgary.ca/profiles/richard-guy) lo indica come problema non risolto in ["Unsolved problems in Combinatorial Games"](http://www.msri.org/communications/books/Book56/files/61guy.pdf) contenuto nel libro MSRI Publications – Volume 56 "Games of No Chance 3", Edited by Michael H. Albert and Richard J. Nowakowski - Cambridge University Press, Cambridge, 2009.
 
-[Richard P. Mann](http://www.richardpmann.com/beggar-my-neighbour-records.html) ha detenuto fino al primo maggio 2012 il record della più lunga partita a Beggar My Neighbour: 7157 carte giocate per concludere la partita. Mann dà anche la configurazione iniziale che porta alla sua partita:
+[Richard P. Mann](http://richardpmann.weebly.com/beggar-my-neighbour-records.html) ha detenuto fino al primo maggio 2012 il record della più lunga partita a Beggar My Neighbour: 7157 carte giocate per concludere la partita. Mann dà anche la configurazione iniziale che porta alla sua partita:
 ```
 1: K-KK----K-A-----JAA--Q--J- 
 2: ---Q---Q-J-----J------AQ--
