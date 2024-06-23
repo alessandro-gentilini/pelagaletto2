@@ -78,6 +78,7 @@ See *Diego Mazzaro (https://cstheory.stackexchange.com/users/68620/diego-mazzaro
 
 See also https://zxq.co/howl/chevainpataia by morgan.
 
+For a Python simulator see https://github.com/matthewmayer/beggarmypython
 
 -----
 
